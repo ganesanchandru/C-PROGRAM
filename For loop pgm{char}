@@ -1,0 +1,28 @@
+🅀🅄🄴🅂🅃🄸🄾🄽:
+An alphabet CH from 'A' to 'V' is passed 
+as the input to the program. The program 
+must print five alphabets from CH as the output. 
+Note: The characters can be represented as integers 
+using ASCII values.
+
+Example Input/Output:
+Input:
+E
+
+Output:
+EFGHI
+
+🄰🄽🅂🅆🄴🅁:
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+char ch;
+scanf("%c",&ch);
+for(int ctr=1;ctr<=5;ctr++){
+    printf("%c",ch);
+    ch++;
+}
+}
