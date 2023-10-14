@@ -1,0 +1,39 @@
+🅀🅄🄴🅂🅃🄸🄾🄽
+The program must accept two integers N1 and N2 as the input. The program must print yes if the N1 is a two digit number and the N2 is a three digit number else print no as the output.
+
+Example Input/Output 1:
+Input:
+17 324
+
+Output:
+yes
+
+Example Input/Output 2:
+Input:
+7 521
+
+Output:
+no
+
+Example Input/Output 3:
+Input:
+54 4 
+
+Output:
+no
+
+🄰🄽🅂🅆🄴🅁
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int N1, N2;
+scanf("%d %d",&N1,&N2);
+if((N1>9 && N1<100) && (N2>99 && N2<1000)){
+    printf("yes");
+}else{
+    printf("no");
+}
+}
