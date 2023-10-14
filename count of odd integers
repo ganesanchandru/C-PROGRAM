@@ -1,0 +1,66 @@
+🅀🅄🄴🅂🅃🄸🄾🄽
+Five integers are passed as the input to the program. The program must print the count of odd integers as the output.
+
+Example Input/Output:
+Input:
+2 7 14 13 29
+
+Output:
+3
+
+🄰🄽🅂🅆🄴🅁
+
+𝕦𝕤𝕖𝕕 𝕗𝕠𝕣 𝕒𝕟𝕕 𝕚𝕗
+
+#include <stdio.h>
+
+int main() {
+    int numbers[5];
+    int count = 0;
+
+    printf("Enter five integers: ");
+
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &numbers[i]);
+        if (numbers[i] % 2 != 0) {
+            count++;
+        }
+    }
+
+    printf("The count of odd integers is: %d\n", count);
+
+    return 0;
+}
+
+             𝕺𝕽
+
+𝕦𝕤𝕖𝕕 𝕚𝕗 𝕔𝕠𝕟𝕕𝕚𝕥𝕚𝕠𝕟
+
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, num3, num4, num5, oddCount=0;
+    scanf("%d %d %d %d %d", &num1, &num2, &num3, &num4, &num5);
+    if(num1%2 != 0)
+    {
+        oddCount++;
+    }
+    if(num2%2 != 0)
+    {
+        oddCount++;
+    }
+    if(num3%2 != 0)
+    {
+        oddCount++;
+    }
+    if(num4%2 != 0)
+    {
+        oddCount++;
+    }
+    if(num5%2 != 0)
+    {
+        oddCount++;
+    }
+    printf("%d", oddCount);
+}
