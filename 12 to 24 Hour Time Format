@@ -1,0 +1,36 @@
+🅀🅄🄴🅂🅃🄸🄾🄽
+
+The program must accept the time in
+24-hour format. The program must print 
+the time in 12-hour format as the output.
+
+Example Input/Output:
+Input:
+0000
+
+Output:
+12:00 AM
+
+
+🄰🄽🅂🅆🄴🅁
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int time, hours, minutes;
+char period[3]="AM";
+scanf("%d",&time);
+hours=time/100;
+minutes=time%100;
+if(hours==0){
+    hours=12;
+}else if(hours==12){
+    period[0]='P';
+}else if(hours>12){
+    hours -= 12;
+    period[0]='P';
+}
+printf("%02d:%02d %s",hours,minutes,period);
+}
