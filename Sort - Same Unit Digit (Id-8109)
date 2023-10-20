@@ -1,0 +1,44 @@
+🅀🅄🄴🅂🅃🄸🄾🄽
+
+The program must accept three integers 
+X, Y and Z as the input. Two of these 
+three integers will have same unit digit. 
+The program must the print smallest integer 
+among the integers which are having the same 
+unit digit. Then the program must print the largest
+integer among the integers which are having the same 
+unit digit. Finally, the program must print the remaining 
+integer as the output.
+
+Example Input/Output 1:
+Input:
+72 29 12
+
+Output:
+12 72 29
+
+Example Input/Output 2:
+Input:
+10 5 90
+
+Output:
+10 90 5
+
+🄰🄽🅂🅆🄴🅁
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int x, y, z;
+scanf("%d %d %d",&x,&y,&z);
+if(x%10 == y%10){
+    printf("%d %d %d",(x<y ? x : y),(x>y ? x : y),z);
+}else if(y%10 == z%10){
+    printf("%d %d %d",(y<z ? x : z),(y>z ? y : z),x);
+}else if(z%10 == x%10){
+    printf("%d %d %d",(x<z ? x : z),(x>z ? x : z),y);
+}
+}
+
