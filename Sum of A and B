@@ -29,7 +29,7 @@ ANSWER :
 
 void main()
 {
-unsigned long long int A,b;
+unsigned long long int A,B;
 scanf("%llu %llu",&A,&B);
 printf("llu",A+B);
 }
