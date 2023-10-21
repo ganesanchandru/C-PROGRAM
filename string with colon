@@ -29,6 +29,6 @@ ANSWER:
 void main()
 {
 char str[101];
-scanf("%[^n]",str);
+scanf("%[^\n]",str);
 printf("%s:%s",str,str);
 }
