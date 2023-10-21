@@ -1,0 +1,34 @@
+QUESTION:
+
+The program must accept a string S as the input. The program must print the stringtwice separated by a colon(:) as the output.
+
+Boundary Condition(s):
+1-<= S <= 100
+
+Example Input/Output 1:
+Input:
+Good Morning
+
+Output:
+Good Morning:Good Morning
+
+Example Input/Output 2;
+Input:
+hello hi, welcome to all
+
+Output:
+hello hi, welcome to all:hello hi, welcome to all
+
+--------------------------------------------------------------------------------------------------------------------------
+
+ANSWER:
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+char str[101];
+scanf("%[^n]",str);
+printf("%s:%s",str,str);
+}
