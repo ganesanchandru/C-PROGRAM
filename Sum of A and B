@@ -1,0 +1,35 @@
+QUESTION : 
+
+The program must accept two integers A and B as the input. The program must print
+the sum of A and B as the output.
+
+Boundary Condition(s):
+1 <= A <= 1000000000000000001 <= B <= 100000000000000000
+
+Example Input/Output 1:
+Input:
+6534534657 34568734657
+
+Output:
+41103269314
+
+Example Input/Output 2:
+Input:
+754775485 34362784386554
+
+Output:
+34363539162039
+
+-------------------------------------------------------------------------------------------------------
+
+ANSWER : 
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+unsigned long long int A,b;
+scanf("%llu %llu",&A,&B);
+printf("llu",A+B);
+}
