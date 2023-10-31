@@ -1,0 +1,33 @@
+ℚ𝕦𝕖𝕤𝕥𝕚𝕠𝕟
+
+Mr. A bought two tables and sold them with some profit. The program must accept the cost price and the selling price for two tables as the input. The program must print the total profit amount as the output. 
+
+Example Input/Output 1:
+Input:
+500 750
+670 800
+
+Output:
+380
+
+Example Input/Output 2:
+Input:
+1500 3000
+3450 5678
+
+Output:
+3728
+
+
+𝔸𝕟𝕤𝕨𝕖𝕣
+
+
+#include<stdio.h>
+
+int main()
+{
+    int costPrice1, sellingPrice1, profit1, costPrice2, sellingPrice2, profit2;
+    scanf("%d %d %d %d", &costPrice1, &sellingPrice1, &costPrice2, &sellingPrice2);
+    printf("%d", (sellingPrice1- costPrice1) + (sellingPrice2 - costPrice2));
+    return 0;
+}
