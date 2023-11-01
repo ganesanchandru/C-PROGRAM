@@ -1,0 +1,30 @@
+🅠🅤🅔🅢🅣🅘🅞🅝
+
+Mr. XYZ needs to go home by a car from his office. The program must accept the speed (in km/hr) of the car and the distance (in km) between his home and office as the input. The program must print the time taken by Mr. XYZ to reach his home with precision up to 2 decimal places as the output.
+
+Example Input/Output 1:
+Input:
+60 180
+
+Output:
+3.00
+
+Example Input/Output 2:
+Input:
+25 135
+
+Output:
+5.40
+
+
+🅐🅝🅢🅦🅔🅡
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+int distance, speed;
+scanf("%d %d",&speed,&distance);
+printf("%.2lf",(double)distance/speed);
+}
