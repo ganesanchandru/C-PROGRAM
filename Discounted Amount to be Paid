@@ -1,0 +1,25 @@
+🅠🅤🅔🅢🅣🅘🅞🅝
+
+A furniture store offers three different discounts on three different types of furniture. The discount percentage and cost price of all the three types of furniture are passed as input to the program. The program must print the total amount required to buy each one in all types of furniture after the discount with precision up to two decimal places as the output.
+
+Example Input/Output:
+Input:
+10 500
+20 1500
+17 3400
+
+Output:
+4472.00
+
+🅐🅝🅢🅦🅔🅡
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int dis1, amt1, dis2, amt2, amt3, dis3;
+scanf("%d %d %d %d %d %d",&dis1,&amt1,&dis2,&amt2,&dis3,&amt3);
+printf("%.2f",(float)((amt1-(amt1*dis1/100.0)) + (amt2-(amt2*dis2/100.0)) + (amt3-(amt3*dis3/100.0))));
+
+}
