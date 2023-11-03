@@ -1,0 +1,31 @@
+🅠🅤🅔🅢🅣🅘🅞🅝
+
+The program must accept principal amount P (in Rs), number of years N (in years) and rate of annual interest R (in %) as the input. The program must print the simple interest (in Rs) with precision up to 2 decimal places as the output.
+Formula: Simple Interest = (P x N x R) / 100
+
+Input Format:
+The first line contains the values of P, N and R separated by space(s).
+
+Output Format:
+The first line contains the value of simple interest.
+
+Example Input/Output:
+Input:
+2000 2 4.5
+
+Output:
+180.00
+
+
+🅐🅝🅢🅦🅔🅡
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+int P, N;
+float R;
+scanf("%d %d %f",&P,&N,&R);
+printf("%.2f",(P*N*R)/100);
+}
