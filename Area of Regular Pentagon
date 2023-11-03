@@ -1,0 +1,25 @@
+🅠🅤🅔🅢🅣🅘🅞🅝
+
+The program must accept two integers S (in cm) representing the side of a regular pentagon and A (in cm) representing the apothem of the pentagon. The program must print the area of the regular pentagon (in cm2) with precision up to 2 decimal places as the output. The apothem is a line from the center of the pentagon drawn to the midpoint of a side such that it is perpendicular to the side.
+Formulae:
+Area of Regular Pentagon = (Perimeter of Regular Pentagon * A) / 2
+Perimeter of Regular Pentagon = 5 * S
+
+Example Input/Output:
+Input:
+5 3
+
+Output:
+37.50
+
+🅐🅝🅢🅦🅔🅡
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+int side, apothem;
+scanf("%d %d",&side,&apothem);
+printf("%.2f",((5*side)*apothem)/2.0);
+}
