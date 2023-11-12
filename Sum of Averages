@@ -1,0 +1,29 @@
+Question
+
+The program must accept five integers as the input. The program must print the sum of the average of the first three integers and the average of the last two integers with precision upto two decimal places as the output. 
+
+Example Input/Output 1:
+Input:
+1 2 4 3 5
+
+Output:
+6.33
+
+Example Input/Output 2:
+Input:
+2 13 118 6 21
+
+Output:
+57.83
+
+Answer
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int A, B, C, D, E;
+scanf("%d %d %d %d %d",&A,&B,&C,&D,&E);
+printf("%.2f",(A+B+C)/3.0 + (D+E)/2.0);
+}
