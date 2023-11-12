@@ -1,0 +1,35 @@
+Question
+
+The program must accept a positive integer N as the input. The program must swap the unit digit and the hundredth digit in N and then print the modified value as the output.
+
+Boundary Condition(s):
+100 <= N <= 10^7
+
+Example Input/Output 1:
+Input:
+93892
+
+Output:
+93298
+
+Example Input/Output 2:
+Input:
+500
+
+Output:
+5
+
+Answer  
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+int N;
+scanf("%d",&N); 
+int unitDigit = N%10;
+int tenthDigit =(N/10) % 10;
+int hundredthDigit = (N/100) % 10;
+printf("%d",(N/1000)*1000+unitDigit*100+tenthDigit*10+hundredthDigit);
+}
