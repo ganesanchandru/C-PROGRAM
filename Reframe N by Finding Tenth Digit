@@ -1,0 +1,26 @@
+ＱＵＥＳＴＩＯＮ
+
+The program must accept an integer N and a sum value X (sum of unit digit, tenth digit and hundredth digit) as the input. The tenth digit is missing in N. The program must find the tenth digit and print N by reframing it as the output.
+
+Example Input/Output :
+Input:
+1235
+12
+
+Output:
+12345
+
+ＡＮＳＷＥＲ
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+int N, sum, unitDigit, tenthDigit, hundredthDigit;
+scanf("%d %d",&N,&sum);
+unitDigit = N%10;
+hundredthDigit = (N/10) % 10;
+tenthDigit = sum - (hundredthDigit+unitDigit);
+printf("%d",(N/100)*1000+(hundredthDigit*100)+(tenthDigit*10)+(unitDigit));
+}
