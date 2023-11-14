@@ -1,0 +1,36 @@
+QUESTION
+
+The program must accept an integer N as the input. The program must print the unit digit of N if it's unit digit is greater than the tenth digit. Else the program must print the tenth digit of N as the output.
+
+Boundary Condition(s):
+10 <= N <= 10^8
+
+Example Input/Output 1:
+Input:
+1234
+
+Output:
+4
+
+Example Input/Output 2:
+Input:
+5463
+
+Output:
+6
+
+ANSWER
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+int num;
+scanf("%d",&num);
+if(num%10 > (num/10)%10){
+    printf("%d",num%10);
+}else{
+    printf("%d",(num/10)%10);
+}
+}
