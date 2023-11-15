@@ -1,0 +1,44 @@
+QUESTION :
+
+The program must accept total marks and number of subjects of two students as the input. The program must print the maximum average mark with precision up to two decimal places as the output.
+
+Input Format:
+The first contains the values of total marks and number of subjects for the first student separated by a space.
+The second contains the values of total marks and number of subjects for the second student separated by a space.
+
+Output Format:
+The first line contains the maximum average mark with precision up to two decimal places.
+
+Example Input/Output:
+Input:
+424 5
+997 12
+
+Output:
+84.80
+
+Explanation:
+The average mark of the first student is 84.800000
+The average mark of the second student is 83.083333
+The maximum average is 84.800000
+Hence the output is 84.80
+
+
+ANSWER :
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+int totMarksOfStu1,totSubOfStu1,totMarksOfStu2,totSubOfStu2;
+scanf("%d %d \n %d %d",&totMarksOfStu1,&totSubOfStu1,&totMarksOfStu2,&totSubOfStu2);
+double avgOfStu1,avgOfStu2;
+avgOfStu1 = (double)totMarksOfStu1/totSubOfStu1;
+avgOfStu2 =(double)totMarksOfStu2/totSubOfStu2;
+if(avgOfStu1 >= avgOfStu2){
+    printf("%.2lf",avgOfStu1);
+}else{
+    printf("%.2lf",avgOfStu2);
+}
+}
