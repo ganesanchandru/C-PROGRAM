@@ -1,0 +1,38 @@
+QUESTION
+
+The program must accept the cost of two chocolates and their names as the input. The program must print the chocolate name with the lower cost. If both the chocolates have the same cost then the program must print both the chocolate names as the output.
+ 
+Example Input/Output 1:
+Input:
+32 Munch
+12 Perk
+
+Output:
+Perk
+
+Example Input/Output 2:
+Input:
+45 KitKat
+45 Eclairs
+
+Output:
+KitKat Eclairs
+
+ANSWER
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+int cost1, cost2;
+char chocolateName1[101], chocolateName2[101];
+scanf("%d %s\n%d %s",&cost1,&chocolateName1,&cost2,chocolateName2);
+if(cost1 < cost2){
+    printf("%s",chocolateName1);
+}else if(cost1 > cost2){
+    printf("%s",chocolateName2);
+}else{
+    printf("%s %s",chocolateName1,chocolateName2);
+}
+}
