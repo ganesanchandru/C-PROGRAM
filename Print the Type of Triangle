@@ -1,0 +1,30 @@
+QUESTION :
+
+The lengths of the sides of a triangle are given as input. The program must print the type of the triangle (scalene or isosceles or equilateral or invalid) as the output.
+ 
+Example Input/Output:
+Input:
+2 3 4
+
+Output:
+scalene
+
+ANSWER :
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+int A, B, C;
+scanf("%d %d %d",&A,&B,&C);
+if(A+B < C || A+C < B || B+C < A){
+    printf("invalid");
+}else if(A==B && B==C){
+    printf("equilateral");
+}else if(A==B || B==C || A==C){
+    printf("isosceles");
+}else{
+    printf("scalene");
+}
+}
