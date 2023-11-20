@@ -1,0 +1,28 @@
+QUESTION :
+
+Accept an integer N as the input. The program must print the smallest even digit as the output.
+
+Example Input/Output:
+Input:
+2342156
+
+Output:
+2
+
+ANSWER : 
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+int n, min=10;
+scanf("%d",&n);
+for(;n>0;n/=10){
+    int digit = n%10;
+    if(digit%2==0 && digit <min){
+        min = digit;
+    }
+}
+printf("%d",min);
+}
