@@ -1,0 +1,44 @@
+QUESTION :
+
+Accept an integer N as the input. If the first and last digits of N are same, then print YES. Else, print NO as the output.
+
+Example Input/Output 1:
+Input:
+45384
+
+Output:
+YES
+
+Example Input/Output 2:
+Input:
+897987
+
+Output:
+NO
+
+ANSWER :
+
+#include<stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    // Find the last digit
+    int lastDigit = N % 10;
+
+    // Find the first digit
+    while (N >= 10) {
+        N /= 10;
+    }
+    int firstDigit = N;
+
+    // Check if the first and last digits are the same
+    if (firstDigit == lastDigit) {
+        printf("YES");
+    } else {
+        printf("NO");
+    }
+
+    return 0;
+}
