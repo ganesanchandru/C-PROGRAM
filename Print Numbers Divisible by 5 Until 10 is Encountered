@@ -1,0 +1,28 @@
+QUESTION :
+
+Accept a list of numbers as the input. The program must print the numbers which are divisible by 5 as the output until 10 is encountered.
+
+Example Input/Output:
+Input:
+13 15 17 20 25 10
+
+Output:
+15 20 25
+
+ANSWER :
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int num;
+while(scanf("%d",&num)>0){
+    if(num==10){
+        break;
+    }else if(num%5==0){
+        printf("%d ",num);
+    }
+}
+return 0;
+}
