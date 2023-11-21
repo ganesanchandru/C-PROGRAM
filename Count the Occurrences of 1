@@ -1,0 +1,30 @@
+QUESTION :
+
+Accept an integer N as the input. The program must print the count of occurrences of the digit 1 in N as the output.
+
+Example Input/Output:
+Input:
+514161
+
+Output:
+3
+
+ANSWER :
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+unsigned long long int N;
+int countOccurenceOfOne = 0;
+scanf("%llu",&N);
+do{
+    if(N%10==1){
+      countOccurenceOfOne++; 
+    }
+    N/=10;
+}while(N != 0);
+    printf("%d ",countOccurenceOfOne);
+return 0;
+}
