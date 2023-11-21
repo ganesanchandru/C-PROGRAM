@@ -1,0 +1,27 @@
+QUESTION :
+
+Accept an integer N as the input. The program must print the count of digits in N as the output.
+
+Example Input/Output:
+Input:
+12345
+
+Output:
+5
+
+ANSWER :
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int N, digitCount=0;
+scanf("%d",&N);
+while(N>0){
+    digitCount++;
+    N/=10;
+}
+printf("%d",digitCount);
+return 0;
+}
