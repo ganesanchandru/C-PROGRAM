@@ -1,0 +1,38 @@
+QUESTION :
+
+Accept an integer N as the input. The program must print N by reversing the digits in it as the output.
+
+Example Input/Output 1:
+Input:
+1235
+
+Output:
+5321
+
+Example Input/Output 2:
+Input:
+1200
+
+Output:
+21
+
+ANSWER :
+
+#include<stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    int reversedNumber = 0;
+
+    while (N > 0) {
+        int digit = N % 10;
+        reversedNumber = reversedNumber * 10 + digit;
+        N /= 10;
+    }
+
+    printf("%d", reversedNumber);
+
+    return 0;
+}
