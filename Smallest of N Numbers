@@ -1,0 +1,35 @@
+QUESTION :
+
+The program must accept N numbers as input. The program must print the smallest number among the N numbers as the output.
+
+Example Input/Output:
+Input:
+6
+21 11 53 40 843 32
+
+Output:
+11
+
+ANSWER :
+
+#include<stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    int smallestNumber;
+
+    for (int i = 0; i < N; i++) {
+        int currentNumber;
+        scanf("%d", &currentNumber);
+
+        if (i == 0 || currentNumber < smallestNumber) {
+            smallestNumber = currentNumber;
+        }
+    }
+
+    printf("%d", smallestNumber);
+
+    return 0;
+}
