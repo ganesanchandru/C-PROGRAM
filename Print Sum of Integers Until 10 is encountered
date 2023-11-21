@@ -1,0 +1,28 @@
+QUESTION :
+Accept a list of integers as the input. The program must print the sum of integers until 10 is encountered.
+
+Example Input/Output:
+Input:
+1 2 3 4 5 10
+
+Output:
+15
+
+ANSWER :
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int N, sum=0;
+while(1) {
+    scanf("%d",&N);
+    if(N==10){
+        break;
+    }
+    sum+=N;
+}
+printf("%d",sum);
+return 0;
+}
