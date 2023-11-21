@@ -1,0 +1,28 @@
+QUESTION :
+
+Accept two numbers A and B as input. The program must print the even numbers from A to B as output.
+
+Example Input/Output:
+Input:
+5 10
+
+Output:
+6 8 10
+
+ANSWER :
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int a, b;
+scanf("%d %d",&a,&b);
+while(a<=b){
+    if(a%2==0){
+        printf("%d ",a);
+    }
+    a++;
+}
+return 0;
+}
