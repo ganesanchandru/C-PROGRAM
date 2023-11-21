@@ -1,0 +1,39 @@
+QUESTION :
+
+Accept N integers as input. The program must print the largest odd integer as the output.
+
+Example Input/Output:
+Input:
+4
+21 34 68 27
+
+Output:
+27
+
+ANSWER :
+
+#include<stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    int largestOdd = -1;  // Initialize with a value smaller than any possible odd integer
+
+    for (int i = 0; i < N; ++i) {
+        int currentNumber;
+        scanf("%d", &currentNumber);
+
+        if (currentNumber % 2 != 0 && currentNumber > largestOdd) {
+            largestOdd = currentNumber;
+        }
+    }
+
+    if (largestOdd != -1) {
+        printf("%d", largestOdd);
+    } else {
+        printf("No odd integers found");
+    }
+
+    return 0;
+}
