@@ -1,0 +1,25 @@
+QUESTION :
+
+Accept two numbers A and B as input. The program must print numbers from B to A as output.
+
+Example Input/Output:
+Input:
+5 10
+
+Output:
+10 9 8 7 6 5
+
+ANSWER :
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int a, b;
+scanf("%d %d",&a,&b);
+while(b>=a){
+    printf("%d ",b--);
+}
+return 0;
+}
