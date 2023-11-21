@@ -1,0 +1,26 @@
+QUESTION :
+
+Accept two integers X and Y as the input. The program must print the value of XY as the output.
+
+Example Input/Output:
+Input:
+10 3
+
+Output:
+1000
+
+ANSWER :
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int x, y, index, result=1;
+scanf("%d %d",&x,&y);
+for(index = 1;index<=y;index++){
+    result *= x;
+}
+printf("%d",result);
+return 0;
+}
