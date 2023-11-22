@@ -1,0 +1,22 @@
+QUESTION :
+
+The program must skip the iteration when 4 is encountered between 1 and 20.
+
+Example Output:
+1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+
+ANSWER :
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+for(int c=1;c<=20;c++){
+    if(c==4){
+        continue;
+    }
+    printf("%d ",c);
+}
+return 0;
+}
