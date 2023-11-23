@@ -1,0 +1,28 @@
+QUESTION :
+Accept an integer N as the input. The program must print NxN grid with Asterisk as output.
+
+Example Input/Output:
+Input:
+3
+
+Output:
+* * *
+* * *
+* * *
+
+ANSWER :
+
+#include <stdio.h>
+int main()
+{
+    int N, index;
+    scanf("%d", &N);
+    int limit = N * N;
+    for(index = 1; index <= limit; index++){
+        printf("* ");
+        if(index % N == 0){
+            printf("\n");
+        }
+    }
+    return 0;
+}
