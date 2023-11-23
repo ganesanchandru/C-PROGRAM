@@ -1,0 +1,29 @@
+QUESTION :
+Accept an integer N as the input. The program must print the pattern as shown in the Example Input/Output section.
+
+Example Input/Output:
+Input:
+3
+
+Output:
+1
+2 3
+4 5 6
+
+ANSWER :
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int N, rows, cols, counter=1;
+scanf("%d",&N);
+for(rows=0;rows<N;rows++){
+    for(cols=0;cols<=rows;cols++){
+        printf("%d ",counter++);
+    }
+    printf("\n");
+}
+return 0;
+}
