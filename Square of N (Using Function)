@@ -1,0 +1,22 @@
+QUESTION :
+Accept an integer N as the input. The program must print the square of N as the output.
+
+Example Input/Output:
+Input:
+10
+Output:
+100
+
+ANSWER :
+#include<stdio.h>
+#include<stdlib.h>
+
+int printSquare(int N){
+    return N*N;
+}
+void main()
+{
+int a;
+scanf("%d",&a);
+printf("%d",printSquare(a));
+}
