@@ -1,0 +1,29 @@
+QUESTION
+
+Fill in the missing lines of code so that the program accepts an alphabet and prints the position of the alphabet.
+
+Example Input/Output 1:
+
+Input:
+a
+Output:
+1
+
+Example Input/Output 2:
+
+Input:
+y
+Output:
+25
+
+ANSWER
+
+#include <stdio.h>
+
+int main() {
+    char ch;
+    scanf("%c", &ch);
+    int p = ch - 'a' + 1; 
+    printf("%d", p);
+    return 0;
+}
