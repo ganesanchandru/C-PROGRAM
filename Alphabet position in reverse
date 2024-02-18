@@ -1,0 +1,27 @@
+QUESTION 
+
+Fill in the missing lines of code so that the program accepts an alphabet and prints the alphabet position in reverse.
+
+Example Input/Output 1:
+
+Input: b
+Output:
+25
+
+Example Input/Output 2:
+
+Input:
+Z
+Output: 
+1
+
+ANSWER 
+
+#include <stdio.h>
+
+int main() {
+    char ch;
+    scanf("%c", &ch);
+    printf("%d", 123-ch);
+    return 0;
+}
